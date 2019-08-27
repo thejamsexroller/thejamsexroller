@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+
+<html class="not-ie" lang="es">
+<!--<![endif]-->
+    
+<head>
+<meta charset="utf-8">
+<meta name="description" content="The Jam Sex Roller" />
+<meta name="keywords" content="banda de rock, thejamsexroller, rock peruano, grunge en lima, punk en lima, indi en lima, cage the elephant, rock achorao, villa maria rock, san juan de miraflores rock, tirando dedo"/>
+<meta name="author" content="The Jam Sex Roller" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>The Jam Sex Roller</title>
+
+<link rel="shortcut icon" href="img/icon.ico">
+
+<!-- google web font-->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    
+<!-- style sheets-->
+<link rel="stylesheet" media="screen" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" media="screen" href="css/styles.css" type="text/css"/>
+<link rel="stylesheet" media="screen" href="css/jquery.tweet.css" type="text/css"/>
+<link rel="stylesheet" media="screen" href="css/audioplayer.css"/>
+
+<!-- main jquery libraries / others are at the bottom-->
+<script src="js/jquery-1.8.3.min.js" type="text/javascript" ></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+
+    
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8&appId=216225352080844";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Menu -->
+<header>
+    <div class="container">
+        <section class="menu"> 
+			<div class="navbar"> <!-- Navbar -->
+	    		<div class="navbar-inner">
+					<a class="brand" href="index.html"><img alt="" src="img/logosexroller.jpg"><!-- <b>The Jam</b> Sex Roller</a> --><!-- Logo -->
+                    <a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <!-- Navigation for small display -->
+                        <i class="icon icon-white icon-chevron-down"></i> Menu
+	          		</a>
+	          		<div class="nav-collapse collapse">
+	            		<ul class="nav">
+                            <li><a href="index.html" class="active">Inicio</a></li>
+                            <!--<li><a href="news.html">News</a></li>-->
+                            <!--<li><a href="shows.html">Shows</a></li>-->
+                            <li><a href="poderintenso.html">Música</a></li>
+                            <!--<li><a href="video.html">Video</a></li>-->
+                            <!--<li><a href="gallery.html">Gallery</a></li>-->
+                            <li><a href="https://www.facebook.com/TheJamSexRoller/?ref=bookmarks">Conócenos</a></li>
+	            		</ul>
+                        <!--
+                         <div class="span6">
+                            <div class="right">
+                                
+                                <a href="https://www.facebook.com/TheJamSexRoller/" class="facebook"></a>
+                                <a href="#" class="twitter"></a>
+                                <a href="#" class="gplus"></a>
+                                <a href="#" class="youtube"></a>
+                                <a href="#" class="vimeo"></a>
+                                <a href="#" class="pinterest"></a>
+                                <a href="#" class="tumblr"></a>
+                                <a href="#" class="skype"></a>
+                            </div><!-- end right  
+                        </div><!-- end span6 --> 
+	          		</div>
+	        	</div> <!--end Navbar Inner -->
+	      	</div> <!--end Navbar -->
+        </section> <!--end Menu -->
+    </div> <!--end Container -->   
+</header>
+<!-- end Menu -->
+
+<!-- Slider -->
+<section id="slider">
+    <div id="main-slider" class="carousel slide carousel-fade" data-interval="false"> <!-- Carousel -->
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner"> <!-- Carousel Container -->
+            <div class="item active">
+                <img alt="" src="img/albumes/banner3.jpg">
+                
+                <div class="container">
+                   
+                    <div class="caption">
+                        <h1><span class="color2">En estreno álbum</span><br><span>PODER INTENSO</span></h1>
+                    </div><!-- end caption --> 
+                </div><!-- end container -->
+            </div><!-- end item --> 
+            
+            <div class="item">
+                <img alt="" src="img/albumes/banner1.jpg">
+                <div class="container">
+                    
+                    <div class="caption">
+                        <h1><span class="color1">En estreno álbum</span><br><span>PODER INTENSO</span></h1>
+                    </div><!-- end caption -->
+                </div><!-- end container  -->
+            </div><!-- end item --> 
+        </div> <!-- end Carousel Container -->
+        <div class="carousel-navigation">
+            <a data-slide="prev" href="#main-slider" class="btn prev"></a>
+            <a data-slide="next" href="#main-slider" class="btn next"></a>  
+        </div> <!-- end Carousel navigation -->
+    </div> <!-- end Carousel -->
+    
+</section>
+<!-- end Slider -->
+
+<!-- Player -->
+<section id="player">
+<div class="container"><div class="row">
+    
+    <!-- First visible song 
+    <div class="span6">
+        <audio preload="auto" controls>
+            <source src="audio.mp3" />
+            <source src="audio.ogg" />
+        </audio>
+    </div><!-- end span6 -->
+    <div class="span5">
+        <p>The Jam <b>Sex Roller</b></p>
+    </div><!-- end span5 -->
+    <div class="span1">
+        <a id="playlist-btn" href="#" class="btn" data-toggle="tooltip" title="" data-placement="right" data-original-title="Play - on/off"><i class="icon-white icon-align-justify"></i></a>
+    </div><!-- end span1 -->
+    <!-- end First visible song -->
+
+</div><!-- end row --></div><!-- end container -->
+</section>
+<!-- end Player -->
+    
+<!-- Playlist 
+<section id="playlist">
+<div class="container"><div class="row">
+    
+    <!-- Playlist 
+        <div class="span12">
+            <div class="page-header">
+              <h3>Playlist <small> Audio files mp3/ogg playlist</small></h3><hr class="hr2">
+            </div>
+        </div><!-- end span12 
+        <div class="span6">
+            <audio preload="auto" controls>
+                <source src="audio.mp3" />
+                <source src="audio.ogg" />
+            </audio>
+        </div><!-- end span6 
+        <div class="span6">
+            <p>2. AraabMuzik - <b>Electronic Dream</b></p>
+        </div><!-- end span6 
+        <div class="span6">
+            <audio preload="auto" controls>
+                <source src="audio.mp3" />
+                <source src="audio.ogg" />
+            </audio>
+        </div><!-- end span6 
+        <div class="span6">
+            <p>3. AraabMuzik - <b>Electronic Dream</b></p>
+        </div><!-- end span6 
+        
+    <!-- end Playlist 
+
+</div><!-- end row </div><!-- end container 
+</section>
+<!-- end Playlist -->
+    
+<!-- Featured -->
+<section>
+<div class="container"><div class="row">
+    
+    <div class="span12">
+        <div class="page-header">
+          <h3>LO QUE TENEMOS PARA TÍ <small> </small></h3><hr class="hr2">
+        </div>
+    </div><!-- end span12 --> 
+        
+        
+        <!-- post thumbnail --> 
+    <div class="span4">
+        <div class="box">
+            <a href="poderintenso.html">
+                <div class="view"><img alt="" src="img/albumes/portada-thejamsexroller.png"><span class="zoom"></span></div><!-- image zoom --> 
+            </a>
+            <div class="thumbnail-header color3">
+                <small><i class="icon-white icon-music"></i> ESTRENO<span class="float-right">PODER INTENSO</span></small>
+            </div><!-- end thumbnail-header --> 
+            <div class="caption">
+                <h4>ALBUM "PODER INTENSO"</h4>
+                <p>Con mucho cariño nuestro Album "PODER INTENSO", gracias por escuchanos!!.. ;)</p>
+                <a href="poderintenso.html" class="btn btn-warning"> <h4>ESCUCHAR ÁLBUM</h4></a>
+
+                
+            </div><!-- end caption --> 
+        </div><!-- end box --> 
+        <!-- popup content --> 
+        <div id="modal-3" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <a class="btn close" data-dismiss="modal" aria-hidden="true"><i class="icon-white icon-remove"></i> Close</a>
+            <div class="box">
+                <iframe class="soundcloud-small" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/279316922&amp;auto_play=false"></iframe>            
+                
+               <!---<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/279316922&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>-->
+                
+                <div class="caption music-bg">
+                    <h4>New single - I Remember - Electronic Dreams Deluxe Edition</h4>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vitae diam purus.</p>
+                    <dl class="dl">
+                        <dt>1. araabMUZIK </dt>
+                        <dd>I Remember - Electronic Dreams Deluxe Edition</dd>
+                    </dl>
+                </div><!-- end caption --> 
+            </div><!-- end box -->  
+        </div><!-- end modal --> 
+        <!-- popup content -->
+    </div><!-- span4 --> 
+    <!-- end post thumbnail -->    
+        
+    <!-- post thumbnail --> 
+    <div class="span4">
+        <div class="box">
+            <a href="#" role="button" data-toggle="modal">
+                <div class="view"><img alt="" src="img/box1.jpg"><span class="zoom"></span></div><!-- image zoom --> 
+            </a>
+            <div class="thumbnail-header color1">
+                <small><i class="icon-white icon-eye-open"></i> Ofertas <span class="float-right">Merch</span></small>
+            </div><!-- end thumbnail-header --> 
+            <div class="caption">
+                <h4>BOX ROLLER</h4>
+                <p>Modelo Peace and Love - Merch Sex Roller</p> 
+                 <a href="https://www.facebook.com/TheJamSexRoller/shop/" class="btn btn-warning"> <h4>IR A TIENDA</h4></a>
+
+                <!---<a href="#" class="link"><i class="icon icon-arrow-right"></i> Leer mas</a>-->
+            </div><!-- end caption --> 
+        </div><!-- end box --> 
+        <!-- popup content --> 
+        <div id="modal-1" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <a class="btn close" data-dismiss="modal" aria-hidden="true"><i class="icon-white icon-remove"></i> Close</a>
+            <img alt="" src="img/one.jpg">
+        </div><!-- end modal --> 
+        <!-- popup content -->
+    </div><!-- span4 --> 
+    <!-- end post thumbnail -->
+    
+    <!-- post thumbnail --> 
+    <div class="span4">
+        <div class="box">
+            <a href="#" role="button" data-toggle="modal">
+                <!--<div class="view"><img alt="" src="img/two.jpg"><span class="zoom"></span></div><!-- image zoom --> 
+            </a>
+            <div class="thumbnail-header color2">
+                <small><i class="icon-white icon-film"></i> Locura, Libertad y Diversión<span class="float-right">TJSR</span></small>
+            </div><!-- end thumbnail-header --> 
+            <div class="caption">
+                <h4>Eventos</h4>
+                <p>Pronto mas noticias</p>
+                <a href="#" class="link"><i class="icon icon-arrow-right"></i> Leer mas</a>
+            </div><!-- end caption --> 
+        </div><!-- end box --> 
+        <!-- popup content --> 
+        <div id="modal-2" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <a class="btn close" data-dismiss="modal" aria-hidden="true"><i class="icon-white icon-remove"></i> Close</a>
+            <div class="box">
+                <div class="video-container"> <!-- Video Container -->
+                    <iframe class="video-box" src="http://player.vimeo.com/video/20793057?title=0&amp;byline=0&amp;portrait=0"></iframe>
+                </div> <!-- end Video Container -->
+            </div><!-- end box --> 
+        </div><!-- end modal --> 
+        <!-- popup content -->
+    </div><!-- span4 --> 
+    <!-- end post thumbnail -->
+    
+
+    
+</div><!-- end row --></div><!-- end container -->
+</section>
+<!-- end Featured -->
+    
+<!-- Concerts 
+<section id="concerts">
+<div class="container"><div class="row">
+    
+    <div class="span12">
+        <div class="page-header">
+          <h3>Concerts <small> Our next shows</small></h3><hr class="hr2">
+        </div>
+    </div><!-- end span12 
+    
+    <!-- post thumbnail 
+    <div class="span6">
+        <div class="box">
+			<div class="thumbnail-header color6">
+                <small><i class="icon-white icon-calendar"></i> Next show<span class="float-right">30.09.2013</span></small>
+            </div><!-- end thumbnail-header 
+            <div class="caption globe-bg">
+                <h4>Melbourne City Hall</h4>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vitae diam purus.</p>
+                <p><a href="shows.html" class="link"><i class="icon icon-arrow-right"></i> Read more</a></p>
+                <dl class="dl-horizontal">
+                    <dt>When</dt>
+                    <dd>30 September 2013 | 11:30 PM</dd>
+                    <dt>Where</dt>
+                    <dd>Massive Club London, Leytonstone 13</dd>
+                    <dt>Featuring</dt>
+                    <dd>Etiam, porta, sem malesuada, magna, mollis, euismod.</dd>
+                    <dt>Tickets</dt>
+                    <dd>Free | Now available</dd>
+                </dl>
+            </div><!-- end caption 
+        </div><!-- end box 
+    </div><!-- span6 
+    <!-- end post thumbnail
+
+    <!-- post thumbnail  
+    <div class="span6">
+        <div class="box">
+			<div class="thumbnail-header color6">
+                <small><i class="icon-white icon-calendar"></i> Next show<span class="float-right">30.09.2013</span></small>
+            </div><!-- end thumbnail-header 
+            <div class="caption globe-bg">
+                <h4>Montreal Eleven Club</h4>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vitae diam purus.</p>
+                <p><a href="shows.html" class="link"><i class="icon icon-arrow-right"></i> Read more</a></p>
+                <dl class="dl-horizontal">
+                    <dt>When</dt>
+                    <dd>30 September 2013 | 11:30 PM</dd>
+                    <dt>Where</dt>
+                    <dd>Massive Club London, Leytonstone 13</dd>
+                    <dt>Featuring</dt>
+                    <dd>Etiam, porta, sem malesuada, magna, mollis, euismod.</dd>
+                    <dt>Tickets</dt>
+                    <dd>Free | Now available</dd>
+                </dl>
+            </div><!-- end caption 
+        </div><!-- end box 
+    </div><!-- span6 
+    <!-- end post thumbnail 
+
+</div><!-- end row --></div><!-- end container 
+</section>
+<!-- end Concerts -->
+    
+<!-- Latest -->
+<section id="latest">
+<div class="container"><div class="row">
+    
+    <div class="span12">
+        <div class="page-header">
+          <h3>SINGLE <small> Camino Hacia el Tren</small></h3><hr class="hr2">
+        </div>
+    </div><!-- end span12 -->
+
+    <!-- post thumbnail --> 
+    <div class="span6">
+        <div class="box">
+            <div class="thumbnail-header color2">
+                <small><i class="icon-white icon-film"></i> Nuevo video<span class="float-right">The Jam Sex Roller</span></small>
+            </div><!-- end thumbnail-header -->
+            <div class="video-container"> <!-- Video Container -->
+            
+                <iframe class="video-box" src="https://www.youtube.com/embed/xSqK3awmyLg"></iframe>
+            </div> <!-- end Video Container --> 
+        </div><!-- end box --> 
+    </div><!-- span6 --> 
+    <!-- end post thumbnail -->
+    
+    <!-- post thumbnail --> 
+    <div class="span6">
+        <div class="box">
+			<div class="thumbnail-header color3">
+                <small><i class="icon-white icon-music"></i> Nuevo single<span class="float-right">The Jam Sex Roller</span></small>
+            </div><!-- end thumbnail-header --> 
+            <div class="caption music-bg">
+                <h4>Nuevo single</h4>
+                <p>Grabado en Matucana(al este de Lima)</p>
+                <!--<p><a href="#" class="link"><i class="icon icon-arrow-right"></i> Read more</a></p>-->
+                
+                
+                
+                <iframe class="soundcloud-small" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140719578&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>            
+                
+            </div><!-- end caption --> 
+        </div><!-- end box --> 
+    </div><!-- span6 --> 
+    <!-- end post thumbnail -->
+    
+</div><!-- end row --></div><!-- end container -->
+</section>
+<!-- end Latest -->
+
+<!-- Footer -->
+<section id="footer-big">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <h4>La Banda</h4>
+                <hr class="hr2">
+                <p>Gente, gracias por visitarnos a nuestra web ;)</p>
+            </div><!-- end span4 --> 
+            <div class="span4">
+                <h4>Contactos</h4>
+                <hr class="hr2">
+                <p>Cel: 947 188 112 </p>
+                <p>E-mail: thejamsexroller@gmail.com</p>
+                <!--<div class="tweet"></div> TweetFeed -->
+            </div><!-- end span4 --> 
+            <div id="flickr" class="span4">
+                <h4>Facebook</h4>
+                <hr class="hr2">
+                <div class="fb-page" data-href="https://www.facebook.com/TheJamSexRoller/" data-tabs="timeline" data-height="30" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/TheJamSexRoller/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TheJamSexRoller/">The Jam Sex Roller</a></blockquote></div>
+                <!--
+                    <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=5&amp;display=latest&amp;size=s&amp;layout=y&amp;source=user&amp;user=52617155@N08"></script>-->
+            </div><!-- end span4 --> 
+        </div><!-- end row -->
+    </div><!-- end container --> 
+</section>      
+<!-- end Footer -->
+    
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <p>Copyright © 2019 Todos los Derechos Reservados <br><small> Diseñado por: www.XEPTEM.com</small></p>
+            </div><!-- end span6 
+            <div class="span6">
+                <div class="right">
+                    <a href="#" class="share"></a>
+                    <a href="#" class="behance"></a>
+                    <a href="#" class="gplus"></a>
+                    <a href="#" class="skype"></a>
+                    <a href="#" class="tumblr"></a>
+                    <a href="#" class="pinterest"></a>
+                    <a href="#" class="twitter"></a>
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="youtube"></a>
+                    <a href="#" class="vimeo"></a>
+                </div><!-- end right 
+            </div><!-- end span6 --> 
+        </div><!-- end row --> 
+    </div><!-- end container --> 
+</footer>    
+<!-- end Footer -->
+
+<!-- Up -->  
+<a href="#" id="up"><i class="icon icon-white icon-arrow-up"></i></a>
+<!-- end Up --> 
+    
+<!-- Java Script -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/audioplayer.js"></script>
+<script src="js/jquery.tweet.js"></script>
+<script src="js/jflickrfeed.min.js"></script>
+
+<!-- Audio Player -->  
+<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>    
+    
+<!-- Tooltip -->  
+<script> 
+$('[data-toggle="tooltip"]').tooltip('hide');
+</script>
+
+<!-- Up -->    
+<script> 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('#up').fadeIn();
+} else {
+$('#up').fadeOut();
+}
+});
+
+$('#up').click(function(){
+ $('html, body').animate({ scrollTop: 0 }, 800);
+});
+</script>
+
+<!-- TweetFeed -->
+<script type='text/javascript'>
+jQuery(function($){
+$(".tweet").tweet({
+username: "envato",
+join_text: null,
+auto_join_text_default: "",
+      auto_join_text_ed: "",
+      auto_join_text_ing: "",
+      auto_join_text_reply: "",
+      auto_join_text_url: "",
+avatar_size: 32,
+count: 2,
+loading_text: "loading tweets..."
+});
+});
+</script>
+
+<!-- Carousel Start -->  
+<script> 
+$('.carousel').carousel({
+  interval: 4000
+})
+</script>
+
+<!-- Playlist -->    
+<script>
+$('#playlist-btn').click(function(){
+    $('#playlist').fadeToggle('800');
+    $('html,body').delay('500').animate({
+        scrollTop: $('#player').offset().top},
+        'slow');});
+</script>
+<!-- end Java Script -->
+
+
+</body>
+</html>
